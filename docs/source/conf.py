@@ -57,8 +57,8 @@ exclude_patterns = []
 #
 html_theme = "sphinx_rtd_theme"
 
-html_logo = "assets/images/Neural.png"
-html_favicon = "assets/images/Neural.png"
+html_logo = "assets/images/Neural.jpg"
+html_favicon = "assets/images/Neural.jpg"
 html_theme_options = {"style_nav_header_background": "white", "logo_only": True}
 
 # Add any paths that contain custom static files (such as style sheets) here,
