@@ -1,48 +1,36 @@
-.. torchmm documentation master file, created by
-   sphinx-quickstart on Tue Sep  1 13:00:32 2020.
+.. GenRL documentation master file, created by
+   sphinx-quickstart on Mon Jun 29 23:38:56 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Torchmm
-===================================
-Now get access to state of the art models and dataloaders via torchmm.
-Compatible with Pytorch and HuggingFace NLP.
+Welcome to GenRL's documentation!
+=================================
 
-Torchmm 
-==================
+Features 
+========
+* Unified Trainer and Logging class: code reusability and high-level UI
+* Ready-made algorithm implementations: ready-made implementations of popular RL algorithms.
+* Extensive Benchmarking
+* Environment implementations
+* Heavy Encapsulation useful for new algorithms
 
-Torchmm is a fast, easy to use library to load mulyi-modal data for deep learning.
-This library is built on top of Pytorch.
-
-Installation
--------------------
- - Using pip
-   - ``pip install torchmm``
-
-Features
-------------------
- - Easy to use
-   - Start by importing your multi-modal dataset in just x lines.
-   - Train state of the art models using torchmm
- - Get access to latest Datasets 
- - Fast and reliable
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-Installation
--------------------
- - Using pip
-   - ``pip install torchmm``
+Contents
+========
+.. toctree::
+   :maxdepth: 2
+   :caption: User Guide
+   
+   usage/install
+   usage/about/about
+   usage/tutorials/index
 
 .. toctree::
    :maxdepth: 2
-   :caption: Get Started:
-   
-   quicktour
-   Installation
-   Features   
+   :caption: API
+
+   api/agents/index
+   api/environments/index
+   api/core/index
+   api/utils/index
+   api/trainers/index
+   api/common/index
