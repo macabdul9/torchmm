@@ -5,57 +5,58 @@ About
 Introduction
 ============
 
-Reinforcement Learning has taken massive leaps forward in extending current AI research. David Silver's paper on playing Atari with Deep Reinforcement Learning can be considered one of the seminal papers in establishing a completely new landscape of Reinforcement Learning Research. With applications in Robotics, Healthcare and numerous other domains, RL has become the prime mechanism of modelling Sequential Decision Making through AI. 
+Natural Language Processing has created a new paradigm shift in both academia and industry today. With the cominig up of Transformers, the field has seen great growth and applications to fields which were previously unheard of.
+Google's BERT has further accelerated the progress in the field. This paper can be considered as the backbone of modern NLP.
+Multi-Modal systems utilize data from 2 or more modalities to make decisions. Our goal with this library is to provide an efficient, fast and reliable way to load and train models on multi-modal data.
 
-Yet, current libraries and resources in Reinforcement Learning are either very limited, messy and/or are scattered. OpenAI's Spinning Up is a great resource for getting started with Deep Reinforcement Learning but it fails to cover more basic concepts in Reinforcement Learning for e.g. Multi Armed Bandits. garage is a great resource for reproducing and evaluating RL algorithms but it fails to introduce a newbie to RL.
+With Tochmm, our goal is three-fold:
+- To educate the user about Natural Language Processing and Multi-Modal Systems.
 
-With GenRL, our goal is three-fold:
-- To educate the user about Reinforcement learning.
-- Easy to understand implementations of State of the Art Reinforcement Learning Algorithms.
-- Providing utilities for developing and evaluating new RL algorithms. Or in a sense be able to implement any new RL algorithm in less than 200 lines.
+- Easy to understand implementations of State of the Multi-Modal Algorithms.
+- Develop efficient pipelines of existing Algorithms.
 
-Policies and Values
-===================
-Modern research on Reinforcement Learning is majorly based on Markov Decision Processes. Policy and Value Functions are one of the core parts of such a problem formulation. And so, polices and values form one of the core parts of our library.
+.. Policies and Values
+.. ===================
+.. Modern research on Reinforcement Learning is majorly based on Markov Decision Processes. Policy and Value Functions are one of the core parts of such a problem formulation. And so, polices and values form one of the core parts of our library.
 
-Trainers and Loggers
-====================
+.. Trainers and Loggers
+.. ====================
 
-Trainers
---------
+.. Trainers
+.. --------
 
-Most current algorithms follow a standard procedure of training. Considering a classification between On-Policy and Off-Policy Algorithms, we provide high level APIs through Trainers which can be coupled with Agents and Environments for training seamlessly.
+.. Most current algorithms follow a standard procedure of training. Considering a classification between On-Policy and Off-Policy Algorithms, we provide high level APIs through Trainers which can be coupled with Agents and Environments for training seamlessly.
 
-Lets take the example of an On-Policy Algorithm, Proximal Policy Optimization. In our Agent, we make sure to define three methods: ``collect_rollouts``, ``get_traj_loss`` and finally ``update_policy``. 
+.. Lets take the example of an On-Policy Algorithm, Proximal Policy Optimization. In our Agent, we make sure to define three methods: ``collect_rollouts``, ``get_traj_loss`` and finally ``update_policy``. 
 
-.. literalinclude:: ../../../../genrl/deep/common/trainer.py
-   :lines: 507-511
-   :lineno-start: 507
+.. .. literalinclude:: ../../../../genrl/deep/common/trainer.py
+..    :lines: 507-511
+..    :lineno-start: 507
 
-The ``OnPolicyTrainer`` simply calls these functions and enables high level usage by simple defining of three methods.
+.. The ``OnPolicyTrainer`` simply calls these functions and enables high level usage by simple defining of three methods.
 
-Loggers
--------
+.. Loggers
+.. -------
 
-At the moment, we support three different types of Loggers. ``HumanOutputFormat``, ``TensorboardLogger`` and ``CSVLogger``. Any of these loggers can be initialized really easily by the top level ``Logger`` class and specifying the individual formats in which logging should performed.
+.. At the moment, we support three different types of Loggers. ``HumanOutputFormat``, ``TensorboardLogger`` and ``CSVLogger``. Any of these loggers can be initialized really easily by the top level ``Logger`` class and specifying the individual formats in which logging should performed.
 
-.. code-block:: python
+.. .. code-block:: python
 
-    logger = Logger(logdir='logs/', formats=['stdout', 'tensorboard'])
+..     logger = Logger(logdir='logs/', formats=['stdout', 'tensorboard'])
 
-After which logger can perform logging easily by providing it with dictionaries of data. For e.g.
+.. After which logger can perform logging easily by providing it with dictionaries of data. For e.g.
 
-.. code-block:: python
+.. .. code-block:: python
 
-    logger.write({"logger":0})
+..     logger.write({"logger":0})
 
-Note: The Tensorboard logger requires an extra x-axis parameter, as it plots data rather than just show it in a tabular format.
+.. Note: The Tensorboard logger requires an extra x-axis parameter, as it plots data rather than just show it in a tabular format.
 
-Agent Encapsulation
-===================
+.. Agent Encapsulation
+.. ===================
 
-WIP
+.. WIP
 
-Environments
-============
-Wrappers
+.. Environments
+.. ============
+.. Wrappers
