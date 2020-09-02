@@ -1,2 +1,2 @@
 # torchmm
-PyTorch Data loaders and abstractions for multi-modal data
+PyTorch Data loaders and abstraction for multi-modal data
