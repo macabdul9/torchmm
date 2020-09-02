@@ -20,12 +20,12 @@ source_suffix = [".rst", ".md"]
 
 # -- Project information -----------------------------------------------------
 
-project = "GenRL"
-copyright = "2020, Society for Artificial Intelligence and Deep Learning (SAiDL)"
-author = "Society for Artificial Intelligence and Deep Learning (SAiDL)"
+project = "Torchmm"
+copyright = "2020, torchmm"
+author = "Abdul Waheed and Ganeshan Malhotra"
 
 # The full version, including alpha/beta/rc tags
-release = "0.1"
+release = "0.0.1"
 
 
 # -- General configuration ---------------------------------------------------
@@ -57,8 +57,8 @@ exclude_patterns = []
 #
 html_theme = "sphinx_rtd_theme"
 
-html_logo = "assets/images/genrl.png"
-html_favicon = "assets/images/genrl_cropped.png"
+html_logo = "assets/images/Neural.png"
+html_favicon = "assets/images/Neural.png"
 html_theme_options = {"style_nav_header_background": "white", "logo_only": True}
 
 # Add any paths that contain custom static files (such as style sheets) here,
