@@ -24,9 +24,9 @@ Contents
    :maxdepth: 2
    :caption: API
 
-   api/agents/index
-   api/environments/index
-   api/core/index
+   api/data/index
+   api/dataloaders/index
+   api/models/index
    api/utils/index
    api/trainers/index
    api/common/index
