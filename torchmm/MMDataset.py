@@ -6,8 +6,6 @@ from datasets import load_dataset
 class MMDataset(Dataset):
     
     def __init__(self, config:None):
-        
-        
         pass
     
     
